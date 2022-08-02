@@ -13,7 +13,7 @@ export default function Search({ searcharray }) {
 
     if (search?.length > 0) {
       const searchData = searcharray?.filter((data) => {
-        return data?.includes(search?.toLowerCase());
+        return data?.toLowerCase().includes(search?.toLowerCase());
       });
       setSearchData(searchData);
     }
